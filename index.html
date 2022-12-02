@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+    <style>
+      
+        #btn{
+            background-color: violet;
+            color: white;
+            border-radius: 8px;
+            border: none;
+            
+            padding: 8px;
+            font-size: 22px;
+            cursor:pointer;
+            margin: auto;   
+        }
+        h4{
+          color: rgb(4, 83, 112);
+        }
+       
+        body{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            display: flex;
+            justify-content:space-around;
+            font-size: 22px;
+            align-items: center;
+            background-color: aliceblue;
+               
+
+        }
+        ul li{
+            list-style: none;     
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;            
+            align-items: center;
+        }
+        
+        ul li a{
+            text-decoration: none;
+             color: navy;
+        }
+        
+        .container{
+               
+            width: 100%;            
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            justify-content: space-between;
+                        
+            
+        }
+        span{
+            display: block;
+            margin-top: 5%;
+        }
+        h1{
+            font-size: 30px;
+        }
+
+        .bg-text{
+          
+            background-color: black;
+            color: white;
+            margin: auto;
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            margin-top: 10%;            
+        }
+        @media only screen and (max-width: 419px)  {
+                h1{
+                    font-size: 22px;
+                }
+                span{
+                    padding: 8px;
+                }
+                nav{
+                  border: 2px solid red; 
+                }
+                .bg-text{
+                    padding: 20px;
+                }
+            }
+
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+        <h4>Color flipper</h4>        
+        <ul>
+            <li><a href="index.html">Simple</a></li>
+            <li><a href="hex.html">Hex</a></li>
+        </ul>        
+    </nav>
+    </header>
+    <main>
+        <div class="container">
+           <div class="bg-text"> <h1>Background Color : <span class="color">#FFFFFF</span></h1></div>
+            <button id="btn">Click me</button>
+        </div>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
